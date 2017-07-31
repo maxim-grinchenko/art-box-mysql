@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <welcome-file-list>
+    <welcome-file>home.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>LogerServlet</display-name>
+    <servlet-name>LogerServlet</servlet-name>
+    <servlet-class>com.controller.LogerServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LogerServlet</servlet-name>
+    <url-pattern>/LogerServlet</url-pattern>
+  </servlet-mapping>
+  <filter>
+    <display-name>AuthorizationEmailFilter</display-name>
+    <filter-name>AuthorizationEmailFilter</filter-name>
+    <filter-class>com.filters.AuthorizationEmailFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>AuthorizationEmailFilter</filter-name>
+    <url-pattern>/AuthorizationEmailFilter</url-pattern>
+  </filter-mapping>
+  <filter>
+    <display-name>AuthorizationPasswordFilter</display-name>
+    <filter-name>AuthorizationPasswordFilter</filter-name>
+    <filter-class>com.filters.AuthorizationPasswordFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>AuthorizationPasswordFilter</filter-name>
+    <url-pattern>/AuthorizationPasswordFilter</url-pattern>
+  </filter-mapping>
+  <servlet>
+    <description></description>
+    <display-name>LogOutServlet</display-name>
+    <servlet-name>LogOutServlet</servlet-name>
+    <servlet-class>com.controller.LogOutServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LogOutServlet</servlet-name>
+    <url-pattern>/LogOutServlet</url-pattern>
+  </servlet-mapping>
+</web-app>

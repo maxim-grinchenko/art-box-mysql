@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings ...>
+
+ 	<pluginGroups>
+	  <pluginGroup>org.apache.tomcat.maven</pluginGroup>
+  	</pluginGroups>
+
+.....
+
+	<server>
+			<id>tomcat</id>
+			<username>deploy</username>
+			<password>deploy</password>
+	</server>
+  </servers>
+  
+.....
+
+	<activeProfiles>
+		<activeProfile>Student</activeProfile>
+		<activeProfile>Mentor</activeProfile>
+	</activeProfiles>
+  
+</settings>
